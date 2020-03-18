@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="abc/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="abc/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="abc/css/core.css" rel="stylesheet" type="text/css">
+	<link href="abc/css/components.css" rel="stylesheet" type="text/css">
+	<link href="abc/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="abc/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="abc/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="abc/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="abc/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="abc/js/plugins/visualization/d3/d3.min.js"></script>
+	<script type="text/javascript" src="abc/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script type="text/javascript" src="abc/js/plugins/forms/styling/switchery.min.js"></script>
+	<script type="text/javascript" src="abc/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="abc/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script type="text/javascript" src="abc/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="abc/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script type="text/javascript" src="abc/js/core/app.js"></script>
+	<script type="text/javascript" src="abc/js/pages/dashboard.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="abc/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<p class="navbar-text"><span class="label bg-success">Online</span></p>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-bubbles4"></i>
+						<span class="visible-xs-inline-block position-right">Messages</span>
+						<span class="badge bg-warning-400">2</span>
+					</a>
+					
+					<div class="dropdown-menu dropdown-content width-350">
+						<div class="dropdown-content-heading">
+							Messages
+							<ul class="icons-list">
+								<li><a href="#"><i class="icon-compose"></i></a></li>
+							</ul>
+						</div>
+
+						<ul class="media-list dropdown-content-body">
+
+							<li class="media">
+								<div class="media-left"><img src="abc/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Richard Vango</span>
+										<span class="media-annotation pull-right">Mon</span>
+									</a>
+									
+									<span class="text-muted">Other travelling salesmen live a life of luxury...</span>
+								</div>
+							</li>
+						</ul>
+
+						<div class="dropdown-content-footer">
+							<a href="#" data-popup="tooltip" title="All messages"><i class="icon-menu display-block"></i></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="abc/images/placeholder.jpg" alt="">
+						<span>Flatshop</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+						<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<div class="sidebar-user">
+						<div class="category-content">
+							<div class="media">
+								<a href="#" class="media-left"><img src="abc/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+								<div class="media-body">
+									<span class="media-heading text-semibold">Admin</span>
+									<div class="text-size-mini text-muted">
+										<i class="icon-pin text-size-small"></i>Hưng yên
+									</div>
+								</div>
+
+								<div class="media-right media-middle">
+									<ul class="icons-list">
+										<li>
+											<a href="#"><i class="icon-cog3"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+								<li class="active"><a href="home.html"><i class="icon-home4"></i> <span>Home</span></a></li>
+								<li>
+									<a href="sanpham.html"><i class="icon-stack2"></i> <span>Sản Phẩm</span></a>
+									<ul>
+										<li><a href="sanpham.html">giày cao gót</a></li>
+										<li><a href="sanpham.html">giày búp bê</a></li>
+										<li><a href="sanpham.html">giày sandal</a></li>
+										<li><a href="sanpham.html">giày boots</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="icon-copy"></i> <span>Loại sản phẩm</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon-droplet2"></i> <span>Khách hàng</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon-stack"></i> <span>Hóa đơn</span></a>
+									<ul>
+										<li><a href="starters/horizontal_nav.html">Hóa đơn Bán</a></li>
+										<li><a href="starters/1_col.html">Hóa đơn nhập</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Bordered table -->
+					<div class="panel panel-flat">
+						<div class="panel-heading">
+							<h5 class="panel-title">Thêm sản phẩm</h5>
+							<div class="heading-elements">
+								<ul class="icons-list">
+			                		<li><a data-action="collapse"></a></li>
+			                		<li><a data-action="reload"></a></li>
+			                		<li><a data-action="close"></a></li>
+			                	</ul>
+		                	</div>
+						</div>
+						<form class="form-horizontal" action="#">
+								<div class="panel panel-flat">
+									<div class="panel-heading">
+										<div class="heading-elements">
+											<ul class="icons-list">
+						                		<li><a data-action="collapse"></a></li>
+						                		<li><a data-action="reload"></a></li>
+						                		<li><a data-action="close"></a></li>
+						                	</ul>
+					                	</div>
+									</div>
+
+									<div class="panel-body">
+										<div class="form-group">
+											<label class="col-lg-3 control-label">Tên sản phẩm:</label>
+											<div class="col-lg-9">
+												<input type="text" name="ten">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label class="col-lg-3 control-label">id_loai</label>
+											<div class="col-lg-9">
+												<input type="text" name="id_loai">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label class="col-lg-3 control-label">Hãng:</label>
+											<div class="col-lg-9">
+													<input type="text" class="styled" name="hang">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label">Độ cao:</label>
+											<div class="col-lg-9">
+													<input type="text" class="styled" name="docao">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label">Giá:</label>
+											<div class="col-lg-9">
+													<input type="text" class="styled" name="gia">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label">Hình Ảnh:</label>
+											<div class="col-lg-9">
+												<div class="media no-margin-top">
+													<div class="media-left">
+														<a href="#"><img src="abc/images/placeholder.jpg" style="width: 58px; height: 58px;" class="img-rounded" alt=""></a>
+													</div>
+
+													<div class="media-body">
+														<input type="file" class="file-styled">
+														<span class="help-block">Các định dạng được chấp nhận: gif, png, jpg. Kích thước tệp tối đa 2Mb</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="text-right">
+											<button type="submit" class="btn btn-primary">Thêm<i class="icon-arrow-right14 position-right"></i></button>
+										</div>
+									</div>
+								</div>
+							</form>
+					</div>
+					<!-- /bordered table -->
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>
